@@ -1,6 +1,0 @@
-
-gam print devices [filter <filter>] [no_company_devices] [no_personal_devices] [no_users] [to_drive] [sort_headers]
-gam sync devices [filter <filter>] [csv_file <csv file>] [serial_number_column <column>] [device_type_column <column>] [asset_id_column <column>] [static_device_type <type>] [unassigned_missing_action <delete|wipe|donothing>] [assigned_missing_action <delete|wipe|donothing>]
-gam create device [serial_number <serial>] [device_type <type>]
-gam delete|wipe|cancel_wipe id <device id> [remove_reset_lock]
-gam delete|wipe|cancelwipe|approve|block deviceuser id <device id>

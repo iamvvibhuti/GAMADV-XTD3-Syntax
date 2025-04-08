@@ -1,0 +1,1 @@
+# GAMADV-XTD3_Device_Syntax

@@ -1,0 +1,53 @@
+
+```json
+{
+  "description": "Complete Advanced GAM syntax reference",
+  "commands": {
+    "user_management": [
+      "gam create user <userEmail> firstname <FirstName> lastname <LastName> password <Password>",
+      "gam update user <userEmail> suspended on|off",
+      "gam delete user <userEmail>",
+      "gam info user <userEmail>",
+      "gam user <userEmail> show groups"
+    ],
+    "group_management": [
+      "gam create group <groupEmail> name <GroupName> description <Description>",
+      "gam update group <groupEmail> name <NewGroupName> description <NewDescription>",
+      "gam delete group <groupEmail>",
+      "gam info group <groupEmail>",
+      "gam update group <groupEmail> add member <userEmail>",
+      "gam update group <groupEmail> remove member <userEmail>"
+    ],
+    "aliases": [
+      "gam create alias <aliasEmail> user <userEmail>",
+      "gam delete alias <aliasEmail>",
+      "gam info alias <aliasEmail>"
+    ],
+    "organizational_units": [
+      "gam create org <OrgUnitPath>",
+      "gam delete org <OrgUnitPath>",
+      "gam update org <OrgUnitPath> name <NewName>",
+      "gam info org <OrgUnitPath>",
+      "gam user <userEmail> move <OrgUnitPath>"
+    ],
+    "licenses": [
+      "gam user <userEmail> add license <SKUId>",
+      "gam user <userEmail> delete license <SKUId>"
+    ],
+    "security": [
+      "gam user <userEmail> show security",
+      "gam user <userEmail> check user",
+      "gam report login start <yyyy-mm-dd> end <yyyy-mm-dd>"
+    ],
+    "reports": [
+      "gam report usage customer <customerId> parameters <parameters> start <yyyy-mm-dd> end <yyyy-mm-dd>",
+      "gam report group <groupEmail> parameters <parameters> start <yyyy-mm-dd> end <yyyy-mm-dd>"
+    ],
+    "email_settings": [
+      "gam user <userEmail> signature <signature>",
+      "gam user <userEmail> forward to <forwardEmail> keep|delete|markread",
+      "gam user <userEmail> vacation subject <subject> message <message> enable|disable"
+    ]
+  }
+}
+```

@@ -1,8 +1,8 @@
 Welcome to the Advanced GAM Syntax Repository!
 
-This project contains a complete reference of Advanced GAM (Google Apps Manager) commands in JSON format for quick lookup and automation.
+The entire reference of Advanced GAM commands is provided in this project as a JSON file optimized for speed and automation.
 
-Contents
+**Contents**
 
 - ✅ Full JSON of GAM commands (`advanced-gam-complete.json`)
 - ✅ Categories include:
@@ -15,12 +15,10 @@ Contents
   - Reports
   - Email Settings
 
-How to Use
+**How to Use**
 
-1. Clone or download this repository.
-2. Use the JSON file to integrate into automation scripts or quick reference tools.
-3. Feel free to contribute by adding more advanced commands or examples!
+To clone or download this repository.
 
-Contribution
+Integrate the JSON file into automation scripts for easy reference or use in automation tools.
 
-Pull requests are welcome! If you have improvements or additional commands, submit a PR.
+Commands can be made more advanced and examples added, so feel free to contribute.

@@ -1,5 +1,3 @@
-Welcome to the Advanced GAM Syntax Repository!
-
 The entire reference of Advanced GAM commands is provided in this project as a JSON file optimized for speed and automation.
 
 **Contents**

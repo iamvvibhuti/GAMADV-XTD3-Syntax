@@ -2,8 +2,8 @@ The entire reference of Advanced GAM commands is provided in this project as a J
 
 **Contents**
 
-- ✅ Full JSON of GAM commands (`advanced-gam-complete.json`)
-- ✅ Categories include:
+- Full JSON of GAM commands (`advanced-gam-complete.json`)
+- Categories include:
   - User Management
   - Group Management
   - Aliases

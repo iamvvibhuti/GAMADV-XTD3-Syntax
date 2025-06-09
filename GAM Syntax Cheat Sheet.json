@@ -1,13 +1,11 @@
-
-
-📊 Reporting & Auditing
+Reporting & Auditing
 -----------------------
 gam report users todrive
 gam report logins user user@domain.com start 2025-06-01 end 2025-06-08 todrive
 gam report usage customer parameters accounts,lastlogin start_date 2025-01-01 end_date 2025-06-01 todrive
 gam report domain fields accounts,teams_count date 2025-06-08
 
-🔐 Alias & Email Routing
+Alias & Email Routing
 ------------------------
 gam create alias alt@domain.com user primary@domain.com
 gam print aliases
@@ -15,41 +13,41 @@ gam delete alias alias@domain.com
 gam all users create gmailfilter subject "urgent" forward to:manager@domain.com
 gam all users delete gmailfilter query "from:spam@evil.com"
 
-🖨️ Printer & Cloud Print
+Printer & Cloud Print
 -------------------------
 gam print printers query "department=Finance" todrive
 gam update printer Printer123 public true dailyQuota 100
 gam printjob Printer123 cancel older_than 1h
 gam printjob Printer123 submit /path/to/handbook.pdf tag "handbook"
 
-📱 Mobile & Device Control
+Mobile & Device Control
 --------------------------
 gam print mobile query "status=active" todrive
 gam update mobile deviceId123 action wipe
 gam info mobile deviceId123
 gam update mobile deviceId456 action block
 
-🧩 Custom Schemas & Directory Fields
+Custom Schemas & Directory Fields
 -----------------------------------
 gam create schema EmployeeInfo field EmployeeID type string index restricted endfield
 gam update schema EmployeeInfo field Dept type string multivalued endfield
 gam print schemas
 gam delete schema EmployeeInfo
 
-📤 Data Migration & Transfer
+Data Migration & Transfer
 ----------------------------
 gam create datatransfer alice@domain.com drive bob@domain.com
 gam info datatransfer DATATRANSFER_ID
 gam print datatransfers newowner bob@domain.com status completed
 
-🎓 Classroom Management
+Classroom Management
 -----------------------
 gam create course CS101 alias cs101@domain.com name "Intro to CS" section "Fall2025"
 gam course cs101 add student student1@domain.com
 gam print courses teacher prof@domain.com todrive
 gam delete course cs101
 
-📂 Projects & Developer Setup
+Projects & Developer Setup
 -----------------------------
 gam version
 gam user admin@domain.com check serviceaccount
@@ -59,23 +57,23 @@ gam user user@domain.com delete token clientid 123456789abcdef
 gam user user@domain.com show backupcodes
 gam user user@domain.com update backupcodes
 
-🗂️ CSV-Powered Bulk Examples
+CSV-Powered Bulk Examples
 -----------------------------
 gam print groups | gam csv – gam update group ~Email includeInGlobalAddressList false
 gam csv GradYearP1P2.csv keyfield GradYear keypattern '20(..)' keyvalue '\1-parents@domain.com' datafield P1Email:P2Email gam update groups sync member csvdata P1Email:P2Email
 
-💳 License Tasks & Syncing
+License Tasks & Syncing
 --------------------------
 gam ou "Sales" add license googlecoordinate
 gam group_ns BigTeam sync license gsuiteenterpriseforeducation
 
-📬 Gmail Advanced Ops
+Gmail Advanced Ops
 ---------------------
 gam all users delete gmailfilter query "from:(no-reply@spam.com)"
 gam user manager@domain.com show delegates
 gam user alice@domain.com delete delegate bob@domain.com
 
-✍️ Bulk Group Creation with Members
+Bulk Group Creation with Members
 -----------------------------------
 CSV:
 group,name,members
